@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mainDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#images{
+    border: 3px solid black;
+    height: 300px;
+}
+
+ul{
+  display: flex; 
+}
+ul li{
+   padding-left: 20px;
+   list-style: none;
+   font-size: 4rem;
+   color: rgb(8, 8, 8);
+   /* background-color: yellow; */
+}
+
+ul :first-child{
+    padding-left: 0;
+}
+h1{
+    left: 50%;
+    /* transform: translateX(-50%); */
+    /* position: absolute; */
+    width: 33%;
+    margin: 23px auto;
+}
+#result{
+    box-shadow: 3px 5px 0px 2px rgba(179,172,172,0.73);
+    -webkit-box-shadow: 3px 5px 0px 2px rgba(179,172,172,0.73);
+    -moz-box-shadow: 3px 5px 0px 2px rgba(179,172,172,0.73);
+    font-size: 2em;
+    text-align: center;
+    width: 27%;
+    margin: 16px;
+    padding: 7px;
+    color: aliceblue;
+    background-color: rgb(24, 23, 23);
+}
+.commonButton {
+    width: 100px;
+    height: 40px;
+    background:rgb(160 154 154); 
+    font-size: 1.2rem;
+    margin-right: 15px;
+    border: none;
+}
+
+.commonButton:hover{
+    cursor: pointer;
+    background-color: rgb(178, 181, 184);
+}
+
+.button2{
+   margin-right: 0;
+}
+.orange{
+    color: orange;
+}
+.yellow{
+    color: yellow;
+}
+
+#buttons{
+    display: flex;
+}
+.hide{
+    display: none;
+
+}
+
+/* PRELOADER */
+.preloader img {
+	width: 300px; height: 300px;
+	background-size: contain;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	to { transform: rotate(360deg) }
+}
