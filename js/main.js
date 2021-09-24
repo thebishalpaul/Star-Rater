@@ -12,7 +12,11 @@ function changeImg() {
 //   getImg.classList.add("hide");
   window.location.reload();
 }
-
+    
+window.onload = () => {
+      document.querySelector(".preloader").remove(".preloader");
+      getImg.classList.remove("hide");
+  };
 getBtn2.addEventListener('click',resetStars);
 
 
@@ -63,10 +67,6 @@ function changeColor(e) {
     }
 
     //remove loader when page is loaded
-    window.onload = () => {
-      document.querySelector(".preloader").remove(".preloader");
-      getImg.classList.remove("hide");
-  };
 
 // getBtn.addEventListener('click', changeImg);
 // function changeImg() {
