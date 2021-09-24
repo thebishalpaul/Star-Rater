@@ -9,7 +9,7 @@ var getImg=document.querySelector("#images");
 
 getBtn1.addEventListener('click', changeImg);
 function changeImg() {
-  getImg.classList.add("hide");
+//   getImg.classList.add("hide");
   window.location.reload();
 }
 
