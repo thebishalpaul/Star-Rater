@@ -8,6 +8,7 @@ var getBtn2=document.querySelector(".button2");
 
 getBtn1.addEventListener('click', changeImg);
 function changeImg() {
+<<<<<<< HEAD
   window.location.reload();
 }
 
@@ -18,6 +19,16 @@ function changeImg() {
     getImg.classList.remove("hide");
 };
 
+=======
+//   getImg.classList.add("hide");
+  window.location.reload();
+}
+    
+window.onload = () => {
+      document.querySelector(".preloader").remove(".preloader");
+      getImg.classList.remove("hide");
+  };
+>>>>>>> 0dddfae7f9fc0a4be30b621a7edcc0a047f13069
 getBtn2.addEventListener('click',resetStars);
 
 
@@ -66,7 +77,12 @@ function changeColor(e) {
         })
     }
 
+<<<<<<< HEAD
  
+=======
+    //remove loader when page is loaded
+
+>>>>>>> 0dddfae7f9fc0a4be30b621a7edcc0a047f13069
 // getBtn.addEventListener('click', changeImg);
 // function changeImg() {
 //     document.getElementById("images").src = "https://picsum.photos/400/300.jpg";
