@@ -5,13 +5,18 @@ var getBtn2=document.querySelector(".button2");
 //     document.getElementById("images").src = "https://picsum.photos/400/300.jpg";
 //     console.log("hey");
 // }
-var getImg=document.querySelector("#images");
 
 getBtn1.addEventListener('click', changeImg);
 function changeImg() {
-  getImg.classList.add("hide");
   window.location.reload();
 }
+
+   //remove loader when page is loaded 
+   var getImg=document.querySelector("#images");
+   window.onload = () => {
+    document.querySelector(".preloader").remove(".preloader");
+    getImg.classList.remove("hide");
+};
 
 getBtn2.addEventListener('click',resetStars);
 
@@ -58,16 +63,10 @@ function changeColor(e) {
             if(type==='mouseout'){
                   ele.classList.remove("yellow");  
             }
-
         })
     }
 
-    //remove loader when page is loaded
-    window.onload = () => {
-      document.querySelector(".preloader").remove(".preloader");
-      getImg.classList.remove("hide");
-  };
-
+ 
 // getBtn.addEventListener('click', changeImg);
 // function changeImg() {
 //     document.getElementById("images").src = "https://picsum.photos/400/300.jpg";
